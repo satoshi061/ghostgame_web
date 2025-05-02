@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <meta name="description" content="ゲーム説明">
+        <title>ゲーム説明</title>
+    </head>
+    <body>
+      
+        <header>
+            <h1>ゲーム説明</h1>
+            <p>1週間でゲームを作るUnity1weeekというイベントで制作した「Escape from the Light」というゲームの説明ページになります。<br>
+            裏と表のある世界を行ったり来たりして迷路を探索していくゲームになります。</p>
+            <img src="images/image1.png" alt="トップ画面"><br>
+            <p class="linkText">ゲームのリンクはこちら</p>
+            <a class="gameLink" href="https://unityroom.com/games/satoshi_2dmaze">GAME</a>
+        </header>  
+
+        <main>
+          <section id="mainText">
+            <h2>ゲームの内容</h2>
+
+            <!--タイトル画面解説-->
+            <div id="titleContent">
+              <div class="content-flex">
+                <div class="contents">
+                  <p>
+                    2Dの迷路の中を突き進むゲームです。
+                    プレイヤーはオバケを操作してゴールを目指します。<br>
+                    タイトル画面からオバケを操作できるので、まずはここで操作方法を覚えてもらいます。<br>
+                    操作はW:上 A:左 S:下 D:右 だけで非常に簡単。
+                  </p>
+                </div>
+                <div class="contents">
+                  <img src="images/image2.png" alt="操作方法">
+                </div>
+              </div>
+              <div class="content-flex">
+                <div class="contents">
+                  <img src="images/image3.png" alt="すり抜け前">
+                </div>
+                <div class="contents">
+                  <p>
+                    ただ、これだと目の前の壁に邪魔されてSTARTボタンまで辿り着けません。
+                  </p>
+                </div>
+              </div>
+              <div class="content-flex">
+                <div class="contents">
+                  <p>
+                    壁は薄い壁と厚い壁の２種類あります。オバケは薄い壁なら通り抜けることができます。<br>
+                    薄い黒い壁の目の前でSPACEボタンを押すとオバケは壁をすり抜けて反対側へ行くことができました。
+                    これでSTRATボタンに触れることができます。
+                  </p>
+                </div>
+                <div class="contents">
+                  <img src="images/image4.png" alt="すり抜け後">
+                </div>
+              </div>
+              <p>
+                プレイヤーはこの壁をすり抜けて壁の反対側へ行くギミックを駆使してゴールを目指すことになります。
+              </p>
+              <div class="subImage">
+                <img src="images/image5.png" alt="すり抜けせず">
+                <p>(本当はSPACE使わなくても上のタイトルロゴの所からギミック乗り越えることができるのですが...)</p>
+              </div>
+            </div>
+            
+            <!--ステージ解説-->
+            <div id="stageContent">
+              <div class="content-flex">
+                <div class="contents">
+                  <p>
+                    STARTボタンにオバケが触れるとステージ1に飛びます。<br>
+                    ただ目の前に懐中電灯を持った人間がいるので早速行き止まりです。<br>
+                    オバケなのでライトに触れると成仏します（スタート地点に戻される）。
+                  </p>
+                </div>
+                <div class="contents">
+                  <img src="images/image6.png" alt="ライトで通れない">
+                </div>
+              </div>
+              <div class="content-flex">
+                <div class="contents">
+                  <img src="images/image12.png" alt="反対側">
+                </div>
+                <div class="contents">
+                  <p>
+                    そこでライトや人間に塞がれた道を避けながらゴールを目指すことになります。<br>
+                    黒い壁の場所でSPACEボタンを押すと、壁をすり抜けてステージの反対側へ行くことができます。<br>
+                    ステージの表側と裏側、２つを行ったり来たりして迷路を探索してきましょう。
+                  </p>
+                </div>
+              </div>
+              <p>
+                ちなみにただ迷路の中を探していてもゴールは見つかりません。<br>
+                迷路のどこかにある鍵を拾うことでゴールである扉が出現します。
+              </p>
+              <div class="content-flex">
+                <div class="goalImage">
+                  <img src="images/image8.png" alt="ゴール無し">
+                  <p>ゴールの扉なし</p>
+                </div>
+                <div class="goalImage">
+                  <img src="images/image7.png" alt="鍵発見">
+                  <p>迷路の中で鍵発見</p>
+                </div>
+                <div class="goalImage">
+                  <img src="images/image9.png" alt="ゴール出現">
+                  <p>何も無かった場所に扉出現</p>
+                </div>
+              </div>
+              <p>
+                扉をくぐるとステージ2に行くことができます。<br>
+                ステージ2は先ほどよりずっと広い迷路になっていますが、基本ルールは今までと同じです。
+              </p>
+              <div class="mainImage">
+                <img src="images/image10.png" alt="ステージ2">
+              </div>
+            </div>
+  
+            <h2>コード</h2>
+            <div id="codecontent">
+              <p>Unityのプロジェクトは以下リンク先に格納してあり、C#スクリプトは/Assets/Scriptsフォルダ内です。</p>
+              <div class="codeLinkText">
+                <a class="gameLink" href="https://github.com/satoshi061/unity-ghostgame/tree/main">リンク</a>
+              </div>
+              <div class="code-flex">
+                <div class="code-content1">
+                  <p>オバケのすり抜け処理はPlayerController.csのUpdate()関数内で行っています。
+                    SPACEボタンが押されたタイミングでオバケの現在位置からすり抜け先の位置を割り出し、
+                    Linecast関数で2地点間に存在するオブジェクトを検出しています。
+                    間にあるのが薄い黒い壁のみの場合だけ、非同期処理ですり抜けを開始します。<br>
+                  </p>
+                </div>
+                <div class="code-content2">
+                  <img src="images/image11.png" alt="コード一部抜粋">
+                </div>
+              </div>
+            </div>
+            <div class="lastText">
+              <p>拙いですが、以上がゲームの説明になります。最後まで読んでいただきありがとうございました。</p>
+            </div>
+          </section>
+          <footer>
+            <p>氏名：山口 智之</p>
+            <p>メールアドレス：shankou0302@gmail.com</p>
+            <p>電話番号：080-8166-0931</p>
+          </footer>
+        </main>
+        <a id="back-btn">TOP</a>
+        <script src="scroll.js"></script>
+    </body>
+</html>
