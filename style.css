@@ -8,185 +8,176 @@ p {
   font-size: 15px;
 }
 
-/*画面ハバが768px以上ではPC用スタイル*/
-@media screen and (min-width: 768px) {
-  /*横幅設定*/
-  body {
-    max-width: 1080px;
-    min-width: 900px;
-    margin: 0 auto 0 auto;
-  }
-  /*ヘッダー*/
-  header {
-    text-align: center;
-  }
-
-  header img {
-    margin: 10px;
-    width: 60%;
-  }
-
-  h1 {
-    margin: 40px 0 0 0;
-    border-top: solid 3px black;
-    border-bottom: solid 3px black; 
-  }
-
-  /*見出し*/
-  h2 {
-    color: rgb(140, 190, 255);
-    margin: 40px 0 0 0;
-    border-bottom: solid 3px rgb(140, 190, 255);
-  }
-
-  .linkText {
-    font-weight: bold;
-    size: 17px;
-  }
-
-  .gameLink {
-    font-weight: bold;
-    size: 17px;
-    color: #7457ea;
-  }
-
-  .gameLink:hover {
-    color: #d3c8ff;
-  }
-
-  .codeLinkText {
-    text-align: center;
-  }
-
-  #titleContent > p {
-    text-align: center;
-  }
-
-  #stageContent > p {
-    text-align: center;
-  }
-
-  #stageContent {
-    border-top: solid 2px rgb(162, 136, 186);
-    margin-top: 70px;
-  }
-
-  .content-flex {
-    display: flex;
-    align-content: space-around;
-    padding: 10px;
-  }
-
-  .contents {
-    width: 40%;
-    margin: 20px;
-  }
-
-  .contents img {
-    width: 100%;
-    margin: 10px;
-  }
-
-  .goalImage {
-    width: 30%;
-    margin: 20px;
-    text-align: center;
-  }
-
-  .goalImage img {
-    width: 100%;
-    height: 70%;
-    margin: 10px;
-  }
-
-  .goalImage p {
-    font-size: 15px;
-    color: gray;
-  }
-
-  .mainImage {
-    margin: 10px auto;
-    width: 70%;
-    text-align: center;
-  }
-
-  .mainImage img {
-    width: 100%;
-  }
-
-  .mainImage p {
-    font-size: 15px;
-    color: gray;
-  }
-
-  .subImage {
-    margin: 10px auto;
-    width: 40%;
-    text-align: center;
-  }
-
-  .subImage img {
-    width: 100%;
-  }
-
-  .subImage p {
-    font-size: 15px;
-    color: gray;
-  }
-
-  .code-flex {
-    display: flex;
-    align-content: space-around;
-    padding: 20px;
-  }
-
-  .code-content1 {
-    width: 25%;
-    margin: 10px;
-  }
-
-  .code-content2 {
-    width: 65%;
-    margin: 10px;
-  }
-
-  .code-content2 img {
-    width: 100%;
-  }
-
-  .lastText {
-    border-top: solid 3px rgb(140, 190, 255);
-    text-align: center;
-    margin-top: 70px;
-  }
-
-  /*footer*/
-  footer {
-    background-color: #0d0d0d;
-    padding: 7px 50px 7px 600px;
-    margin: 3px auto;
-    color: white;
-  }
-  
-  #back-btn {
-    opacity: 0;
-
-    padding: 40px 40px;
-    background-color: #65f6c3;
-    color: #000000;
-    text-decoration: none;
-    border-radius: 50%;
-  
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-
-    transition: all 1s ease;
-  }
-
+/*横幅設定*/
+body {
+  max-width: 1080px;
+  min-width: 900px;
+  margin: 0 auto 0 auto;
+}
+/*ヘッダー*/
+header {
+  text-align: center;
 }
 
-/*画面幅が767px以下の時はスマートフォン用スタイル*/
-@media screen and (max-width: 767px) {
+header img {
+  margin: 10px;
+  width: 60%;
+}
 
+h1 {
+  margin: 40px 0 0 0;
+  border-top: solid 3px black;
+  border-bottom: solid 3px black; 
+}
+
+/*見出し*/
+h2 {
+  color: rgb(140, 190, 255);
+  margin: 40px 0 0 0;
+  border-bottom: solid 3px rgb(140, 190, 255);
+}
+
+.linkText {
+  font-weight: bold;
+  size: 17px;
+}
+
+.gameLink {
+  font-weight: bold;
+  size: 17px;
+  color: #7457ea;
+}
+
+.gameLink:hover {
+  color: #d3c8ff;
+}
+
+.codeLinkText {
+  text-align: center;
+}
+
+#titleContent > p {
+  text-align: center;
+}
+
+#stageContent > p {
+  text-align: center;
+}
+
+#stageContent {
+  border-top: solid 2px rgb(162, 136, 186);
+  margin-top: 70px;
+}
+
+.content-flex {
+  display: flex;
+  align-content: space-around;
+  padding: 10px;
+}
+
+.contents {
+  width: 40%;
+  margin: 20px;
+}
+
+.contents img {
+  width: 100%;
+  margin: 10px;
+}
+
+.goalImage {
+  width: 30%;
+  margin: 20px;
+  text-align: center;
+}
+
+.goalImage img {
+  width: 100%;
+  height: 70%;
+  margin: 10px;
+}
+
+.goalImage p {
+  font-size: 15px;
+  color: gray;
+}
+
+.mainImage {
+  margin: 10px auto;
+  width: 70%;
+  text-align: center;
+}
+
+.mainImage img {
+  width: 100%;
+}
+
+.mainImage p {
+  font-size: 15px;
+  color: gray;
+}
+
+.subImage {
+  margin: 10px auto;
+  width: 40%;
+  text-align: center;
+}
+
+.subImage img {
+  width: 100%;
+}
+
+.subImage p {
+  font-size: 15px;
+  color: gray;
+}
+
+.code-flex {
+  display: flex;
+  align-content: space-around;
+  padding: 20px;
+}
+
+.code-content1 {
+  width: 25%;
+  margin: 10px;
+}
+
+.code-content2 {
+  width: 65%;
+  margin: 10px;
+}
+
+.code-content2 img {
+  width: 100%;
+}
+
+.lastText {
+  border-top: solid 3px rgb(140, 190, 255);
+  text-align: center;
+  margin-top: 70px;
+}
+
+/*footer*/
+footer {
+  background-color: #0d0d0d;
+  padding: 7px 50px 7px 600px;
+  margin: 3px auto;
+  color: white;
+}
+
+#back-btn {
+  opacity: 0;
+
+  padding: 40px 40px;
+  background-color: #65f6c3;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 50%;
+
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+
+  transition: all 1s ease;
 }
